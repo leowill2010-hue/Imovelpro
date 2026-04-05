@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+// Captura o hash do Supabase e redireciona para o site principal
+const hash = window.location.hash;
+const path = window.location.pathname;
+if (hash && hash.includes('access_token')) {
+  window.location.href = 'https://leowill2010-hue.github.io/Imovelpro/' + hash;
+} else {
+  window.location.href = 'https://leowill2010-hue.github.io/Imovelpro/';
+}
+</script>
+</head>
+<body>Redirecionando...</body>
+</html>
